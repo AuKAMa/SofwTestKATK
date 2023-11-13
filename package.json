@@ -1,0 +1,19 @@
+{
+    "name": "software_testing",
+    "version": "1.1.0",
+    "description": "This is Package.json for software testing node.js",
+    "main": "index.js",
+    "scripts": {
+      "prestart": "npm install",
+      "start": "node index.js"
+    },
+    
+    "license": "Unlicense",
+    "private": true,
+    "dependencies": {
+      "connect": "^3.2.0",
+      "js-yaml": "^3.3.0"
+    },
+    "author": "Kati Auranen ja Tiina Kairenius"
+  }
+
