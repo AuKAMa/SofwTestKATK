@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const reduce = require('./reduce');
+import reduce from '../src/reduce';
 
 describe('reduce', () => {
   it('Reduces an array of numbers to their sum', () => {

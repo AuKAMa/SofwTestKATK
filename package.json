@@ -16,6 +16,8 @@
     },
     "author": "Kati Auranen ja Tiina Kairenius",
     "devDependencies": {
+        "coveralls": "^3.1.1",
+        "istanbul": "^0.4.5",
         "mocha": "^10.2.0"
     }
 }
