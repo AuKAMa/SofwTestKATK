@@ -6,8 +6,11 @@
     "scripts": {
         "prestart": "npm install",
         "start": "node index.js",
-        "test": "mocha"
-    },
+        "test": "mocha", 
+        "coverage": "istanbul cover _mocha",
+        "test": "mocha tests/**/*.test.js --reporter mochawesome --reporter-options reportFilename=custom-report --exit",
+        "coverage": "nyc --reporter=lcov --report-dir=coverage npm test && nyc report --reporter=text-lcov | coveralls"
+},
     "license": "Unlicense",
     "private": true,
     "dependencies": {
@@ -16,8 +19,7 @@
     },
     "author": "Kati Auranen ja Tiina Kairenius",
     "devDependencies": {
-        "coveralls": "^3.1.1",
-        "istanbul": "^0.4.5",
-        "mocha": "^10.2.0"
+        "mocha": "^10.2.0",
+        "chai": "^4.3.4"
     }
 }

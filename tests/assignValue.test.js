@@ -1,6 +1,6 @@
-import { describe, it } from 'mocha';
+const { describe, it } = require('mocha');
 import { expect } from 'chai';
-import assignValue from '../src/assignValue';
+import assignValue from '../src/.internal/assignValue';
 
 describe('assignValue', () => {
   // Test case 1

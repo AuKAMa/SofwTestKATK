@@ -1,6 +1,6 @@
 // add.test.js
-const { expect } = require('chai');
-const add = require('./add');
+import { expect } from 'chai';
+import add from '../src/add';
 
 describe('add.js', () => {
   it('should add two numbers correctly', () => {
@@ -13,5 +13,4 @@ describe('add.js', () => {
     expect(result).to.equal(-2);
   });
 
-  //  muita testejä
 });
